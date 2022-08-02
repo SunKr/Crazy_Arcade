@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="default">
+      <UniqueIdentifier>{dc8f8a54-9aa6-40d9-b799-7797a644c75e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{844c9cc5-6ea5-4d7e-8f7c-028f088060bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="default\헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Game\00.header">
+      <UniqueIdentifier>{0cb21d6b-5b91-4bae-8caf-116adf92395b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\01.Engine">
+      <UniqueIdentifier>{b877e298-a192-4d31-87eb-540ebe751944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\02.Manager">
+      <UniqueIdentifier>{00ce06b5-b6e3-4c00-baaa-7c036e11395f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\03.Csene">
+      <UniqueIdentifier>{139d37a8-e6ed-4bfc-b7a9-b2abfaf8d22b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\04.Object">
+      <UniqueIdentifier>{649f69a5-8cf6-4e2f-aca6-2356229c56eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\05.Component">
+      <UniqueIdentifier>{0af38cd4-3ad8-4a98-8283-2faccb35af38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\06.Resouces">
+      <UniqueIdentifier>{a8646ba1-7c8a-4c95-ad74-5d7a69b8987f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WinGame.h">
+      <Filter>default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>default</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>default</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>default</Filter>
+    </ClInclude>
+    <ClInclude Include="CEntity.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="CEngine.h">
+      <Filter>Game\01.Engine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WinGame.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="WinGame.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinGame.cpp" />
+    <ClCompile Include="CEntity.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="CEngine.cpp">
+      <Filter>Game\01.Engine</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
